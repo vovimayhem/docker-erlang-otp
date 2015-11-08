@@ -1,8 +1,7 @@
 
 FROM otp:18.1
 
-ENV ELIXIR_VERSION=1.1.1
-ENV LANG=C.UTF-8
+ENV ELIXIR_VERSION=1.1.1 LANG=C.UTF-8
 
 RUN set -xe \
 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/archive/v${ELIXIR_VERSION}.tar.gz" \
